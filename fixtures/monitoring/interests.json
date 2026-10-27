@@ -1,0 +1,15 @@
+{
+  "synthetic": true,
+  "interests": [
+    {
+      "reference_id": "DEMO-REF-A",
+      "name": "Example Substance Alpha",
+      "allow_substring": false
+    },
+    {
+      "reference_id": "DEMO-INTEREST-G",
+      "name": "Example Substance Gamma",
+      "allow_substring": true
+    }
+  ]
+}

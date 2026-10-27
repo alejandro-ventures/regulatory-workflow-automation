@@ -4,6 +4,14 @@
 
 [Portfolio](../README.md) | [Synthetic walkthrough](../examples/README.md#1-edqm-reference-monitor)
 
+## Try the offline demonstration
+
+The [reference-monitor demo](../demos/MONITOR.md) parses an invented local feed
+and HTML table, matches a fictional interest list, and writes review candidates
+and a processing checkpoint. It does not access EDQM or send notifications.
+Unlike the operational workflow below, it tracks individual record versions
+and uses an explicit previous-run checkpoint rather than a mutable shared state.
+
 ## Problem
 
 Checking publication announcements and identifying relevant reference changes

@@ -8,6 +8,10 @@ executable tests. Dates and identifiers have no operational meaning.
 
 **Demonstration only. Not for regulatory submission.**
 
+For executable monitoring examples with different fixture records and verified
+counts, see the [three-run monitor walkthrough](../demos/MONITOR.md).
+The illustrations below are not the monitor's expected output.
+
 ## 1. EDQM Reference Monitor
 
 ### Illustrative inputs

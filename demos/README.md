@@ -4,6 +4,8 @@
 [Source](report_composer.py) | [Invented input](../fixtures/reporting/annual-report.json) |
 [Tests](../tests/test_report_composer.py)
 
+Also available: [offline reference-monitor demo](MONITOR.md).
+
 An offline demonstration that turns invented structured data into two reviewable
 DOCX drafts and a self-contained HTML preview. The layouts were authored for this
 showcase in Python; no corporate templates or operational source code are used.
@@ -101,8 +103,10 @@ Use invented descriptions and product labels only.
 ## Test
 
 ```powershell
-.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+.\.venv\Scripts\python.exe -m unittest discover -s tests -p test_report_composer.py -v
 ```
+
+For the full suite, install `".[monitor]"` and omit the `-p` selector.
 
 Tests check validation, malformed JSON, empty amendment lists, exact DOCX table
 values, neutral author metadata, demonstration labels, HTML escaping, overwrite

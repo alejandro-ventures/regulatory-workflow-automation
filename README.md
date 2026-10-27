@@ -6,7 +6,7 @@ Monitoring reference updates. Drafting structured reports. Preparing submission 
 This portfolio presents four automation projects through their workflow design,
 engineering decisions, and human-review boundaries.
 
-**Case studies + runnable demo | Synthetic examples | No production code or live access**
+**Case studies + runnable demos | Synthetic examples | No production code or live access**
 
 ## Selected projects
 
@@ -17,7 +17,7 @@ engineering decisions, and human-review boundaries.
 | **FDA Annual Report Composer** | Annual-report preparation repeats extraction and document-formatting work. | Extract candidate values, confirm them with a reviewer, and populate document templates. | [Case study](case-studies/fda-annual-report-composer.md) |
 | **RIMS Archive Preparation Assistant** | Submission archiving requires repetitive assembly and checking. | Prepare an archive note, render the index, merge PDFs, and check page counts. | [Case study](case-studies/rims-archive-preparation.md) |
 
-## Try the first runnable demo
+## Try the report composer
 
 The [annual report composer](demos/README.md) generates two DOCX drafts and an HTML
 preview from [invented JSON input](fixtures/reporting/annual-report.json).
@@ -34,7 +34,18 @@ Start-Process .\output\report-demo\preview.html
 
 Use a new output directory for each run. See the [demo instructions](demos/README.md)
 for expected results, validation rules, tests, and other platforms.
-Monitoring and archiving demos remain planned, not implemented.
+
+## Try the offline reference monitor
+
+The [EDQM/USP-style monitor](demos/MONITOR.md) uses invented local RSS, HTML,
+and spreadsheet inputs to create a JSON review queue and an HTML preview.
+It never connects to either source service.
+
+Follow the [three-run walkthrough](demos/MONITOR.md#run-the-three-scenarios):
+the baseline produces **3 review candidates**, an identical repeat produces **0**,
+and a revised fixture produces **1**. Each run preserves its own checkpoint.
+
+The archive-builder demo remains planned, not implemented.
 
 ## One design principle: automate preparation, preserve judgment
 
@@ -63,6 +74,8 @@ a substitute for regulatory expertise.
 - Four concise case studies with architecture diagrams and limitations.
 - A runnable [report composer](demos/README.md) with generic source code, invented
   input, document generation, an HTML preview, and automated tests.
+- A runnable [offline reference monitor](demos/MONITOR.md) with two local input
+  adapters, matching reasons, repeat suppression, and immutable run checkpoints.
 - [Synthetic walkthroughs](examples/README.md) illustrating inputs and outputs.
 - A [hybrid portfolio design](HYBRID-DESIGN.md) specifying the remaining demos,
   presentation, and release boundaries.
@@ -72,7 +85,7 @@ a substitute for regulatory expertise.
 The descriptions are based on project workflow documentation. Production
 implementations have not been independently tested or audited as part of this
 showcase. The walkthroughs are manually authored illustrations, not captured runs;
-the separate report demo generates actual files from a synthetic fixture.
+the separate demos generate actual files from synthetic fixtures.
 No performance measurements, compliance certification, or deployment claims are made.
 
 ## Scope and confidentiality
@@ -94,5 +107,6 @@ submission**.
 ## Reading order
 
 Start with a case study, compare its workflow with the
-[synthetic examples](examples/README.md), try the [report demo](demos/README.md), then review the
+[synthetic examples](examples/README.md), try the [report demo](demos/README.md)
+or [monitor demo](demos/MONITOR.md), then review the
 [publication checklist](PUBLICATION-CHECKLIST.md) before adapting or publishing material.

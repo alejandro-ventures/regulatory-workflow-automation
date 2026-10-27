@@ -4,6 +4,14 @@
 
 [Portfolio](../README.md) | [Synthetic walkthrough](../examples/README.md#2-usp-update-review-assistant)
 
+## Try the offline demonstration
+
+The [reference-monitor demo](../demos/MONITOR.md) generates an invented local
+spreadsheet, filters monographs, and demonstrates exact and substring matching.
+It does not access the USP portal or use a subscription export. The simplified
+schema and full-record fingerprint are demo-specific, not the operational export
+format or state key described below.
+
 ## Problem
 
 Repeatedly opening a change listing, filtering document types, and comparing

@@ -9,11 +9,13 @@ that a repository is safe to publish.
 
 This showcase was authored separately from operational projects. It contains
 high-level case studies, invented examples, and a newly authored generic report
-demo, not copied operational implementation files or production outputs.
+demo and offline reference monitor, not copied operational implementation files
+or production outputs.
 Generated local outputs and the development environment are ignored; upload only
 the reviewed source and fixture set, not the whole working directory.
-The reviewed source, documentation, tests, and invented fixture are published at
+The published baseline is available at
 [regulatory-workflow-automation](https://github.com/dbstudioai/regulatory-workflow-automation).
+New local changes, including additional demos, require their own review before upload.
 Local environments, installation metadata, caches, and generated outputs are
 excluded from that publication set.
 
