@@ -2,7 +2,7 @@
 
 [Back to portfolio](README.md)
 
-**Status: report-composer and offline monitoring demos implemented; archive demo remains proposed.**
+**Status: report-composer, offline monitoring, and archive demos implemented locally.**
 
 The [report demo instructions](demos/README.md) describe the implemented scope.
 It uses a single module with generic layouts defined in Python, rather than a
@@ -13,6 +13,10 @@ The [monitor demo](demos/MONITOR.md) uses one module for both local adapters and
 a small spreadsheet fixture generator. Each run writes an immutable checkpoint
 after its review outputs; later runs explicitly select a previous checkpoint.
 No live source adapters or notification delivery are included.
+
+The [archive demo](demos/ARCHIVE.md) generates a fixed invented package and creates
+a bookmarked PDF, preserved sources, and a manifest. This is not a RIMS integration.
+Repository publication status must be checked separately from local implementation.
 
 ## 1. Positioning
 

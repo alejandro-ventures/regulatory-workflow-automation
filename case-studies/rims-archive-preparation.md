@@ -4,6 +4,13 @@
 
 [Portfolio](../README.md) | [Synthetic walkthrough](../examples/README.md#4-rims-archive-preparation-assistant)
 
+## Try the offline demonstration
+
+The [archive builder](../demos/ARCHIVE.md) generates invented PDFs and XML,
+then builds a bookmarked archive with page counts and hashes. Its small fixed
+schema and generic layout are separate from the operational workflow described
+below. It has no RIMS integration and uses no internal filing rules or documents.
+
 ## Problem
 
 Preparing submission archives involves repetitive folder checks, supporting-note

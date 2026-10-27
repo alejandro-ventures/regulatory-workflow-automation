@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - name: Install demonstration
-        run: python -m pip install ".[monitor]"
+        run: python -m pip install ".[monitor,archive]"
       - name: Run tests
         run: python -m unittest discover -s tests -v
       - name: Generate synthetic package
@@ -36,3 +36,7 @@ jobs:
         run: python -m demos.reference_monitor --feed fixtures/monitoring/feed.xml --spreadsheet output/monitor-inputs/baseline.xlsx --interests fixtures/monitoring/interests.json --previous output/monitor-first/state.json --output output/monitor-repeat --confirm-synthetic
       - name: Monitor revised record
         run: python -m demos.reference_monitor --feed fixtures/monitoring/feed.xml --spreadsheet output/monitor-inputs/revised.xlsx --interests fixtures/monitoring/interests.json --previous output/monitor-repeat/state.json --output output/monitor-revised --confirm-synthetic
+      - name: Generate invented archive inputs
+        run: python -m demos.archive_builder fixtures --output output/archive-inputs
+      - name: Build synthetic archive
+        run: python -m demos.archive_builder build --input output/archive-inputs --output output/archive-demo --confirm-synthetic

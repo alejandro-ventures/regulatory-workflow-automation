@@ -99,6 +99,9 @@ schema. The preview is not a regulatory template or an actual generated file.
 
 ## 4. RIMS Archive Preparation Assistant
 
+The runnable [archive demo](../demos/ARCHIVE.md) uses a five-page invented package.
+The ten-page illustration below is a separate conceptual example, not its output.
+
 ### Illustrative input set
 
 ```text

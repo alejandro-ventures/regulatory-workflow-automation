@@ -157,10 +157,11 @@ This is not an exactly-once notification service or a crash-safe database.
 ## Test and limitations
 
 ```powershell
-.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+.\.venv\Scripts\python.exe -m unittest discover -s tests -p test_reference_monitor.py -v
 ```
 
-Install the monitor extra before running the full suite. Tests cover both adapters,
+Install the monitor extra before running these tests. For the full suite, install
+`".[monitor,archive]"` and omit the `-p` selector. Tests cover both adapters,
 all three scenarios, matching reasons, chapter filtering, duplicate handling,
 changed interests, invalid inputs/checkpoints, escaped HTML, output collisions,
 write/render failures, and offline execution. The existing report tests also run.

@@ -9,7 +9,7 @@ that a repository is safe to publish.
 
 This showcase was authored separately from operational projects. It contains
 high-level case studies, invented examples, and a newly authored generic report
-demo and offline reference monitor, not copied operational implementation files
+demo, offline reference monitor, and archive builder, not copied operational implementation files
 or production outputs.
 Generated local outputs and the development environment are ignored; upload only
 the reviewed source and fixture set, not the whole working directory.

@@ -45,7 +45,12 @@ Follow the [three-run walkthrough](demos/MONITOR.md#run-the-three-scenarios):
 the baseline produces **3 review candidates**, an identical repeat produces **0**,
 and a revised fixture produces **1**. Each run preserves its own checkpoint.
 
-The archive-builder demo remains planned, not implemented.
+## Try the offline archive builder
+
+The [archive demo](demos/ARCHIVE.md) generates an invented submission package and
+assembles a five-page PDF with four bookmarks, a hash manifest, and an HTML summary.
+It preserves the source XML/PDFs and checks the merged page count. No RIMS access,
+corporate filing rules, or real submission records are used.
 
 ## One design principle: automate preparation, preserve judgment
 
@@ -76,8 +81,10 @@ a substitute for regulatory expertise.
   input, document generation, an HTML preview, and automated tests.
 - A runnable [offline reference monitor](demos/MONITOR.md) with two local input
   adapters, matching reasons, repeat suppression, and immutable run checkpoints.
+- A runnable [archive builder](demos/ARCHIVE.md) with invented PDF fixtures,
+  bookmarks, page-count verification, and a hash manifest.
 - [Synthetic walkthroughs](examples/README.md) illustrating inputs and outputs.
-- A [hybrid portfolio design](HYBRID-DESIGN.md) specifying the remaining demos,
+- A [hybrid portfolio design](HYBRID-DESIGN.md) specifying the demo scope,
   presentation, and release boundaries.
 - A [publication checklist](PUBLICATION-CHECKLIST.md) covering disclosure, ownership,
   metadata, and Git history.
