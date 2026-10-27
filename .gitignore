@@ -1,0 +1,34 @@
+# Local credentials and authenticated browser state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+.browser_data*/
+.downloads/
+
+# Runtime and local development state
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.vscode/
+*.log
+state.json
+Thumbs.db
+Desktop.ini
+output/
+build/
+dist/
+*.egg-info/
+.report-demo-*/
+
+# Operational documents and packages are outside this documentation showcase
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+*.msg
+*.zip

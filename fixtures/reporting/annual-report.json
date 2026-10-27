@@ -1,0 +1,19 @@
+{
+  "synthetic": true,
+  "product": "Example Material Alpha",
+  "dossier": "DEMO-DOSSIER-A",
+  "reporting_year": 2030,
+  "prepared_on": "2031-01-15",
+  "amendments": [
+    {
+      "sequence": "DEMO-SEQUENCE-A",
+      "date": "2030-03-12",
+      "description": "Invented administrative update for demonstration."
+    },
+    {
+      "sequence": "DEMO-SEQUENCE-B",
+      "date": "2030-09-24",
+      "description": "Invented document-format update for demonstration."
+    }
+  ]
+}
