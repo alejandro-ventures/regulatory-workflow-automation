@@ -26,8 +26,9 @@ sequence packages for candidate metadata. It presents findings for confirmation,
 allows values to be corrected, and gathers additional information interactively.
 
 After a final confirmation, it populates document templates to produce a draft
-cover letter and annual report. Report content includes amendment information
-and, where applicable, authorization and withdrawal tables.
+cover letter and annual report. The case study focuses on structured drafting
+and reviewer confirmation; operational table layouts and organization-specific
+report content are outside its scope.
 
 ```mermaid
 flowchart TD

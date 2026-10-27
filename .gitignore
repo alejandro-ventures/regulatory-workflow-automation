@@ -32,3 +32,10 @@ dist/
 *.pptx
 *.msg
 *.zip
+*.csv
+*.xls
+*.xlsm
+*.eml
+*.har
+storage_state*.json
+auth*.json

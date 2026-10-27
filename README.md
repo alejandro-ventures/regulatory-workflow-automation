@@ -84,8 +84,8 @@ a substitute for regulatory expertise.
 - A runnable [archive builder](demos/ARCHIVE.md) with invented PDF fixtures,
   bookmarks, page-count verification, and a hash manifest.
 - [Synthetic walkthroughs](examples/README.md) illustrating inputs and outputs.
-- A [hybrid portfolio design](HYBRID-DESIGN.md) specifying the demo scope,
-  presentation, and release boundaries.
+- An [architecture overview](ARCHITECTURE.md) describing the three runnable demos,
+  their data flow, and their boundaries.
 - A [publication checklist](PUBLICATION-CHECKLIST.md) covering disclosure, ownership,
   metadata, and Git history.
 
@@ -96,6 +96,12 @@ the separate demos generate actual files from synthetic fixtures.
 No performance measurements, compliance certification, or deployment claims are made.
 
 ## Scope and confidentiality
+
+This repository is publicly accessible. Public availability, passing tests, and
+synthetic labels do not establish ownership or permission to disclose the source
+workflow concepts. The [publication checklist](PUBLICATION-CHECKLIST.md) is a
+review template, not an approval record; release-specific permissions and evidence
+belong in private records outside this repository.
 
 This repository intentionally excludes production source code, real reports,
 submission packages, internal procedures, interest lists, account details,
@@ -114,6 +120,6 @@ submission**.
 ## Reading order
 
 Start with a case study, compare its workflow with the
-[synthetic examples](examples/README.md), try the [report demo](demos/README.md)
-or [monitor demo](demos/MONITOR.md), then review the
+[synthetic examples](examples/README.md), try the [report](demos/README.md),
+[monitor](demos/MONITOR.md), or [archive](demos/ARCHIVE.md) demo, then review the
 [publication checklist](PUBLICATION-CHECKLIST.md) before adapting or publishing material.

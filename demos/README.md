@@ -113,14 +113,15 @@ Tests check validation, malformed JSON, empty amendment lists, exact DOCX table
 values, neutral author metadata, demonstration labels, HTML escaping, overwrite
 protection, staged-output cleanup, and CLI exit behavior.
 
-Local verification used Python 3.11.1. The GitHub Actions workflow configures
-Windows and Linux checks on Python 3.11 and 3.14; those remote runs are not
-claimed to have passed until executed on GitHub.
+The [CI workflow](../.github/workflows/tests.yml) defines the supported test matrix
+and demo commands. Check the [Actions results](https://github.com/dbstudioai/regulatory-workflow-automation/actions)
+for the exact commit being evaluated; configuration alone is not evidence of a
+successful run or permission to publish.
 
 ## Deliberate limits
 
 This is a new generic demonstration, not a public release of the operational FDA
 report generator. It does not extract previous reports, parse submission packages,
-assess completeness, manage authorized-party lists, provide signatures, or submit
+assess completeness, manage operational records, provide signatures, or submit
 anything. Outputs remain unapproved drafts. Ownership and disclosure review are
-still required before publication.
+required for each release; public availability is not evidence of that approval.

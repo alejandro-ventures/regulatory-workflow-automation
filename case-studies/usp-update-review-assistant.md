@@ -8,9 +8,9 @@
 
 The [reference-monitor demo](../demos/MONITOR.md) generates an invented local
 spreadsheet, filters monographs, and demonstrates exact and substring matching.
-It does not access the USP portal or use a subscription export. The simplified
-schema and full-record fingerprint are demo-specific, not the operational export
-format or state key described below.
+It does not access the USP portal or use a subscription export. Its input schema
+and full-record fingerprint are demonstration choices, not a reproduction of an
+operational export format or tracking scheme.
 
 ## Problem
 
@@ -20,9 +20,10 @@ important output is a focused set of candidates for expert review.
 
 ## Workflow
 
-The documented implementation uses browser automation in an authorized session
-to obtain a spreadsheet export of a change listing. It parses the export,
-retains monograph entries, and compares each record with saved processing state.
+The documented workflow starts from an authorized change listing. It structures
+the records, retains relevant document types, and compares them with saved
+processing state. Source acquisition and access arrangements are outside this
+case study and the runnable demonstration.
 
 New records are matched against an interest list using exact and substring
 name matching. Relevant matches produce a notification containing review
@@ -45,8 +46,8 @@ while processing state also includes observed nonmatching entries.
 
 - **Use an exported table as the parsing boundary.** Structured rows separate
   the matching workflow from the portal presentation.
-- **Track change identity.** The documented state key combines the record name,
-  revision type, and date.
+- **Track change identity.** Distinguish a newly observed version from a record
+  already reviewed, using an identity appropriate to the permitted source data.
 - **Include match context.** A notification should help a reviewer distinguish
   an exact-name match from a broader substring match.
 
@@ -64,6 +65,6 @@ or subscription text. Its demonstration begins with an invented table.
 
 ## What this case study demonstrates
 
-Browser-assisted collection, spreadsheet parsing, composite record identity,
-stateful filtering, and review-oriented matching. Implementation behavior is
+Structured-input parsing, change identity, stateful filtering, and
+review-oriented matching. Implementation behavior is
 described from documentation, not independently verified here.

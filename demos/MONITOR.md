@@ -166,10 +166,11 @@ all three scenarios, matching reasons, chapter filtering, duplicate handling,
 changed interests, invalid inputs/checkpoints, escaped HTML, output collisions,
 write/render failures, and offline execution. The existing report tests also run.
 
-Local validation uses Python 3.11.1. The updated GitHub Actions workflow runs both
-demos on Windows and Linux with Python 3.11 and 3.14 when published; local changes
-are not evidence that the remote workflow has already run.
+The [CI workflow](../.github/workflows/tests.yml) defines the test matrix and
+commands for all three demos. Check the [Actions results](https://github.com/dbstudioai/regulatory-workflow-automation/actions)
+for the exact commit being evaluated; configuration alone does not establish
+that the checks passed.
 
-The operational case studies describe capabilities that this demo intentionally
-does not implement: browser access, portal authentication, real source parsing,
-email delivery, and scheduling. A match is a review candidate, not regulatory advice.
+This demo intentionally excludes source acquisition, portal authentication,
+real source parsing, email delivery, and scheduling. A match is a review
+candidate, not regulatory advice.

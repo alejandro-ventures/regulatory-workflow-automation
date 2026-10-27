@@ -111,5 +111,7 @@ All demos:
 Tests check page totals, bookmark destinations, component hashes, actual text,
 neutral metadata, unchanged inputs, long-index pagination, invalid input,
 overwrite protection, write-failure cleanup, and CLI confirmation/errors.
-Local verification uses Python 3.11.1. Updated CI configuration is not evidence
-of a remote test run until the changes are published.
+The [CI workflow](../.github/workflows/tests.yml) defines the test matrix and demo
+commands. Check the [Actions results](https://github.com/dbstudioai/regulatory-workflow-automation/actions)
+for the exact commit being evaluated; configuration alone is not evidence that
+the checks passed.
